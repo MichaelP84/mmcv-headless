@@ -129,7 +129,7 @@ try:
 except ImportError:
     # If first not installed install second package
     CHOOSE_INSTALL_REQUIRES = [('opencv-python-headless>=3',
-                                'opencv-python>=3')]
+                                )]
     for main, secondary in CHOOSE_INSTALL_REQUIRES:
         install_requires.append(choose_requirement(main, secondary))
 
